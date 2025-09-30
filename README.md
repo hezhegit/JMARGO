@@ -1,6 +1,6 @@
-# MERGO
+# JMARGO
 
-This repository contains script which were used to build and train the MERGO model together with the scripts for evaluating the model's performance.
+This repository contains script which were used to build and train the JMARGO model together with the scripts for evaluating the model's performance.
 
 # Get Started
 
