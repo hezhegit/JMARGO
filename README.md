@@ -8,9 +8,13 @@ JMARGO: Joint Multi-Perspective Representation with Multi-Branch Adaptive Routin
 <img src="https://img.shields.io/badge/Build-Success-green" />
 <img src="https://img.shields.io/badge/Release-0.1-blue" />
 </p>
-
 <p align="center">
 This repository contains scripts used to build and train the JMARGO model, together with scripts for evaluating model performance.
+</p>
+
+<img src="image/JMARGO.png" width=100%/> <br>
+<p align="center">
+Overview of the JMARGO framework for protein function annotation. (a) Perspective Initialization Module extracts ProtT5 and ESM2 per-residue embeddings. (b) Preliminary Prediction Module instantiates Shallow Prediction Networks (SPN) and Deep Prediction Networks (DPN) for each perspective. (c) Top-K Routing Mechanism performs input-conditioned selection and weighting of prediction-branch outputs.
 </p>
 
 ---
