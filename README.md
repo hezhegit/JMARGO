@@ -1,5 +1,6 @@
 <h1 align="center">
-JMARGO: Joint Multi-Perspective Representation with Multi-Branch Adaptive Routing for Protein Function Annotation
+MERGO: A Multi-Perspective Expert Routing Framework with Enhanced Feature
+Learning for Protein Function Prediction
 </h1>
 
 <p align="center">
@@ -9,19 +10,15 @@ JMARGO: Joint Multi-Perspective Representation with Multi-Branch Adaptive Routin
 <img src="https://img.shields.io/badge/Release-0.1-blue" />
 </p>
 <p align="center">
-This repository contains scripts used to build and train the JMARGO model, together with scripts for evaluating model performance.
+This repository contains scripts used to build and train the MERGO model, together with scripts for evaluating model performance.
 </p>
 
-<img src="image/JMARGO.png" width=100%/> <br>
-<p align="center">
-Overview of the JMARGO framework for protein function annotation. (a) Perspective Initialization Module extracts ProtT5 and ESM2 per-residue embeddings. (b) Preliminary Prediction Module instantiates Shallow Prediction Networks (SPN) and Deep Prediction Networks (DPN) for each perspective. (c) Top-K Routing Mechanism performs input-conditioned selection and weighting of prediction-branch outputs.
-</p>
 
 ---
 
 ## Datasets
 
-This repository uses two benchmark datasets for training and evaluation of JMARGO. The dataset snapshots and train/validation/test splits are consistent with the protocols used in the cited publications below.
+This repository uses two benchmark datasets for training and evaluation of MERGO. The dataset snapshots and train/validation/test splits are consistent with the protocols used in the cited publications below.
 
 - Zhou, N.; Jiang, Y.; Bergquist, T. R.; et al. *The CAFA challenge reports improved protein function prediction and new functional annotations for hundreds of genes through experimental screens.* Genome Biol., 2019. https://doi.org/10.1186/s13059-019-1835-8  
 - The UniProt Consortium; Bateman, A.; Martin, M.-J.; et al. *UniProt: The Universal Protein Knowledgebase in 2023.* Nucleic Acids Res., 2023. https://doi.org/10.1093/nar/gkac1052
@@ -67,8 +64,8 @@ This repository uses two benchmark datasets for training and evaluation of JMARG
 ### Create conda environment
 
 ```bash
-conda create -n jmargo python=3.8 -y
-conda activate jmargo
+conda create -n mergo python=3.8 -y
+conda activate mergo
 ```
 
 Install Python dependencies:
@@ -124,7 +121,7 @@ python main.py
 **Outputs**
 
 - `results/prediction.pkl` — model predictions
-- `results/JMARGO.txt` — evaluation metrics
+- `results/MERGO.txt` — evaluation metrics
 
 ------
 
